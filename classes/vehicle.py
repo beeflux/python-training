@@ -1,3 +1,20 @@
+"""
+    *   Vehicle is the parent class
+
+    *   Construct __init__ takes 3 arguments
+            -   name (sets name of the vehicle)
+            -   price (sets the price of the vehicle)
+            -   key value items (sets the dictionary items)
+
+    *    Python setattr is used to set the dynamic value for the object
+    *    Comprises of functions:
+            -   run()
+                    => prints "running"
+            -   repair()
+                    => access the part from the parts
+                    => prints the repairing
+"""
+
 class Vehicle:
     def __init__(self, name, price, plate, ** kwargs):
         self.name = name
