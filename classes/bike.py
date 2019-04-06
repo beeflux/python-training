@@ -22,7 +22,7 @@ class Bike(Vehicle):
     def print_info(self):
         print("Your bike is {}, with engine power {} and topspeed = {} "
         .format(self.kind,self.engine,self.topspeed))
-
+        self.servicing()
 
 if __name__ == '__main__':
     # v = Vehicle("Car", 200, "Ba 1 ja 2015", color="red")
