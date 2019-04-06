@@ -15,8 +15,9 @@
                     => prints the repairing
 """
 
+
 class Vehicle:
-    def __init__(self, name, price, plate, ** kwargs):
+    def __init__(self, name, price, plate, **kwargs):
         self.name = name
         self.price = price
         self.plate = plate
@@ -30,6 +31,7 @@ class Vehicle:
     def repair(self, parts):
         for part in parts:
             print("repairing ", part)
+
 
 if __name__ == '__main__':
     v = Vehicle("Car", 200, "Ba 1 ja 2015", color="red")
