@@ -1,19 +1,20 @@
-class Vehicle:
-    def __init__(self, name, price, plate, ** kwargs):
-        self.name = name
-        self.price = price
-        self.plate = plate
 
-        for k, v in kwargs.items():
-            setattr(self, k, v)
 
-    def run(self):
-        print("running")
-
-    def repair(self, parts):
-        for part in parts:
-            print("repairing ", part)
-            
+from vehicle import Vehicle
+   
+"""
+    *   HeavyTruck is the child class inherited from class Vehicle
+    *   Construct __init__ takes 3 arguments
+            -   company (sets name of the Heavy Truck company)
+            -   weight (sets the weight of the Heavy Truck)
+            -   capacity_load (sets the capacity of the truck to carry loads)
+    *    Comprises of functions:
+            -   cover_distance()
+                    => prints the distance covered by the truck
+            -   carry_load()
+                    => prints the amount of load the truck is carrying
+"""
+         
 class HeavyTruck(Vehicle):
     
     def __init__(self, company,weight,capacity_load):
