@@ -15,19 +15,30 @@ class Motorbike(Bike):
     def run(self):
         # for i in range(random.randint(0, 6)):
         gear = random.randint(0, 5)
+        print("Your bike number plate: ", self.numberplate)
+        
         if gear == 0:
             print("Your bike is at neutral and you are at rest.")
         elif gear == 1:
+            print("Your bike is {}".format(Vehicle.run(self)))
             print("Your speed must be in beween 0 and 30")
         elif gear == 2:
+            print("Your bike is {}".format(Vehicle.run(self)))
             print("Your speed must be in beween 30 and 60")
         elif gear == 3:
+            print("Your bike is {}".format(Vehicle.run(self)))
             print("Your speed must be in beween 60 and 90")
         elif gear == 4:
+            print("Your bike is {}".format(Vehicle.run(self)))
             print("Your speed must be in beween 90 and 120")
         elif gear == 5:
+            print("Your bike is {}".format(Vehicle.run(self)))
             print("Your speed must be in beween 120 and 150. Slow down !!!")
-        
+
+
+if __name__ == '__main__':
+    motorbike = Motorbike('Ba 1 Ja 9801')
+    motorbike.run()
         
 
         

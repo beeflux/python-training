@@ -1,4 +1,5 @@
 class Vehicle:
+
     def __init__(self, name, price, plate, ** kwargs):
         self.name = name
         self.price = price
@@ -8,12 +9,13 @@ class Vehicle:
             setattr(self, k, v)
 
     def run(self):
-        print("running")
+        return "running"
 
     def repair(self, parts):
         for part in parts:
             print("repairing ", part)
 
-if __name__ == '__main__':
+
+if __name__ == '__main__': #kun file run garaudai ho, tessai ko naam lekhne
     v = Vehicle("Car", 200, "Ba 1 ja 2015", color="red")
     print(v.plate, "is the plate no")
