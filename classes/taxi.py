@@ -1,18 +1,20 @@
 from vehicle import Vehicle
 class Taxi(Vehicle):
-	def __init__(self,price):
-		self.price = price
+	def __init__(self,seats,offroad):
+		self.seats = seats
+		self.offroad = offroad
+		Vehicle.__init__(self,"cargo",100000,"Ba 1 ja 2015",color="red")
 	def warrenty(self):
 		print("I got no warranty")
-	def getPrice(self):
-		return self.price
+	def petrol_diesel(self):
+		print("Petrol engine")
 if __name__ == '__main__':
-	#v = Vehicle("Car", 200, "Ba 1 ja 2015", color="red")
-	#print(v.plate, "is the plate no")
+	t = Taxi(4,"offroad")
+	print("name is: ",t.name)
+	print(t.run())
+	print(t.repair("engine"))
+	print(t.warrenty())
+	print("no. of seats = ",t.seats)
+	print(t.petrol_diesel())
 
-t = Taxi(1000)
-print(t.run())
-print(t.repair("engine"))
-print(t.warrenty())
-print(t.getPrice())
 
