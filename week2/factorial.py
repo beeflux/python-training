@@ -6,4 +6,4 @@ def factorial(n):
         i += 1
     return f
 
-print(factorial(3))
+print(factorial(4))
