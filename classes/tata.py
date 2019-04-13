@@ -1,16 +1,17 @@
+from cars import car
 
-from vehicle import Vehicle
-class Tata(Vehicle):
-	def __init__(self,price):
-		self.price = price
-	def warrenty(self):
-		print("the warranty is provided")
-	def getPrice(self):
-		return self.price
+class Tata(car):
+	def warranty(self):
+		print("the warranty is provided already")
+
+	def num_seat(self,numbers):
+		print("the number of seats is:", numbers)
+
+	def engine(self,engine):
+		print("the car uses",engine,"engine")
+
 if __name__ == '__main__':
-	t = Tata(1000)
-	print(t.run())
-	print(t.repair("engine"))
-	print(t.warrenty())
-	print(t.getPrice())
-
+	t = Tata()
+	print(t.warranty())
+	print(t.num_seat(5))
+	print(t.engine("petrol"))
