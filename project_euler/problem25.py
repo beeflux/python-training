@@ -49,5 +49,6 @@ def run():
         #Advance the Fibonacci sequence by one step
         previous, current = current, previous + current
 
-print(run())
+if __name__ == "__main__":
+    print(run())
         

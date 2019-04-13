@@ -29,5 +29,6 @@ def run():
     ans += sum(4 * i * i - 6 * (i - 1) for i in range (3, size +1,2))
     return str(ans)
 
-print(run())
+if __name__ == "__main__":
+    print(run())
 

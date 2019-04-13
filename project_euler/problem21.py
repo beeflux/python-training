@@ -29,5 +29,6 @@ def run():
             ans += i
     return str(ans)
 
-print(run())
+if __name__ == "__main__":
+    print(run())
 

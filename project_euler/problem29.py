@@ -22,7 +22,8 @@ and let the set count the number of unique values present.
 
 def run():
     seen = set(a**b for a in range(2,101) for b in range(2, 101))
-    return len(seen))
+    return len(seen)
 
-print(run())
+if __name__ == "__main__":
+    print(run())
 

@@ -25,5 +25,6 @@ def run():
 def fifth_power_digit_sum(n):
     return sum(int(c)**5 for c in str(n))
 
-print(run())
+if __name__ == "__main__":
+    print(run())
 
