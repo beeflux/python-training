@@ -23,5 +23,5 @@ def run():
             if pent - Pj in ps and pent - 2*Pj in ps: 
                 return pent - 2*Pj
         ps.add(pent)
-
-print(" the value of d is: ",run())
+if __name__ == '__main__':
+	print(" the value of d is: ",run())

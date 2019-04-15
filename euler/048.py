@@ -8,4 +8,5 @@ def run():
     for i in range(1,1001):
         ans = (ans + (i**i))% MOD
     return ans
-print(run())
+if __name__ == '__main__':
+	print(run())

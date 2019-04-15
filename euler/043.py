@@ -32,6 +32,5 @@ def is_substring_divisible(num):
 	return all((num[i + 1] * 100 + num[i + 2] * 10 + num[i + 3]) % p == 0
 		for (i, p) in enumerate(DIVISIBILITY_TESTS))
 
-
-
-print(run())
+if __name__ == '__main__':
+	print(run())

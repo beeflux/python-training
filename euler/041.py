@@ -44,4 +44,5 @@ def prev_permutation(arr):
 	arr[i : ] = arr[len(arr) - 1 : i - 1 : -1]
 	return True
 
-print(run())
+if __name__ == '__main__':
+	print(run())

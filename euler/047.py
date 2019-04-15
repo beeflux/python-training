@@ -28,4 +28,6 @@ def run(L, nf, ns):
 			c = 0
 			if f[n] == 0: f[n::n] = [x+1 for x in f[n::n]]
 	return
-print(run(300000,4,4))
+
+if __name__ == '__main__':
+	print(run(300000,4,4))

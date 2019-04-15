@@ -31,4 +31,5 @@ def run():
         f = -f
 
     print("the smallest odd composite that cannot be written as the sum of a prime and twice a square =",n)
-run()
+if __name__ == '__main__':
+	run()
